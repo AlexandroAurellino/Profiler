@@ -1,9 +1,6 @@
-# backend/app/models/schemas.py
-
 from enum import Enum
 from typing import List, Optional
 from pydantic import BaseModel, Field, model_validator, ConfigDict
-
 import math
 
 # ==========================================
@@ -50,8 +47,8 @@ class ParsedCourse(BaseModel):
     grade_letter: str = Field(..., description="Original grade from PDF.")
     grade_value: float = Field(..., ge=0.0, le=4.0, description="Converted numeric value (0.0 - 4.0).")
 
-    # Strict config to forbid extra fields that might confuse the logic
-    model_config = ConfigDict(extra='forbid')
+    # Pydantic V2: Strict config to forbid extra fields
+    model_config = ConfigDict(extra='ignore')
 
 class StudentTranscript(BaseModel):
     """
@@ -65,6 +62,14 @@ class StudentTranscript(BaseModel):
 # ==========================================
 # 3. KNOWLEDGE BASE MODELS (The Expert Rules)
 # ==========================================
+
+class CourseMetadata(BaseModel):
+    """
+    Structure for the entries in courses.yaml
+    """
+    code: str
+    name: str
+    sks: int
 
 class CourseRelevance(BaseModel):
     """
@@ -90,8 +95,6 @@ class AHPConfig(BaseModel):
         total = self.w_foundation + self.w_competency + self.w_density
         
         # 2. Robust Floating Point Comparison
-        # We never use '==' with floats because 0.1 + 0.2 != 0.3 in computers (it's 0.30000000004)
-        # We check if the difference is negligible (e.g., smaller than 0.001)
         if not math.isclose(total, 1.0, rel_tol=1e-5):
             raise ValueError(
                 f"AHP Weights must sum to 1.0. Current sum: {total:.4f} "
@@ -99,7 +102,7 @@ class AHPConfig(BaseModel):
             )
         
         return self
-    
+
 class PrerequisiteType(str, Enum):
     COURSE_GRADE = "COURSE_GRADE" # Requires a specific grade in another course
     SKS_COUNT = "SKS_COUNT"       # Requires total SKS passed

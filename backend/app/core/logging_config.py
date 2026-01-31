@@ -1,16 +1,12 @@
 # backend/app/core/logging_config.py
 
-import os
 from pydantic import BaseModel
 
 class LogConfig(BaseModel):
-    """Logging configuration to be set for the server"""
-
     LOGGER_NAME: str = "ahp_profiler"
     LOG_FORMAT: str = "%(levelprefix)s | %(asctime)s | %(module)s:%(lineno)d | %(message)s"
     LOG_LEVEL: str = "DEBUG"
 
-    # Logging config
     version: int = 1
     disable_existing_loggers: bool = False
     formatters: dict = {
@@ -30,7 +26,7 @@ class LogConfig(BaseModel):
             "formatter": "default",
             "class": "logging.handlers.RotatingFileHandler",
             "filename": "logs/app.log",
-            "maxBytes": 1024 * 1024 * 10, # 10 MB
+            "maxBytes": 10485760, # 10MB
             "backupCount": 5,
             "encoding": "utf8",
         },
@@ -38,6 +34,4 @@ class LogConfig(BaseModel):
     loggers: dict = {
         "ahp_profiler": {"handlers": ["default", "file"], "level": LOG_LEVEL},
         "uvicorn": {"handlers": ["default", "file"], "level": "INFO"},
-        "uvicorn.error": {"level": "INFO"},
-        "uvicorn.access": {"handlers": ["default", "file"], "level": "INFO"},
     }
