@@ -1,0 +1,83 @@
+# ==========================================
+# PYTHON & BACKEND
+# ==========================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments (Crucial to ignore)
+venv/
+env/
+.venv/
+backend/venv/
+
+# Distribution / Packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ==========================================
+# CONFIGURATION & SECRETS
+# ==========================================
+# Never commit secrets or API keys!
+.env
+.env.local
+.env.backup
+
+# ==========================================
+# LOGS & DATABASES
+# ==========================================
+*.log
+backend/logs/
+*.sqlite3
+
+# ==========================================
+# TESTING & QUALITY
+# ==========================================
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# ==========================================
+# IDE & EDITOR SETTINGS
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ==========================================
+# OS GENERATED FILES
+# ==========================================
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Mac (Just in case)
+.DS_Store
+
+# ==========================================
+# PROJECT SPECIFIC
+# ==========================================
+# Ignore test PDF files so you don't commit student data
+*.pdf
+
+# If you still have the leftover Laravel folder
+frontend/vendor/
+frontend/node_modules/

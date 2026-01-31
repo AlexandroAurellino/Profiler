@@ -1,0 +1,119 @@
+# ==========================================
+# FOUNDATION (Sem 1-4)
+# ==========================================
+FOUNDATION:
+  # AI Foundation (Math, Logic, AI Basic)
+  # Now includes Coding (Algo/StrukDat) because you can't do AI without coding!
+  TI0033: { AI: 0.6 } # Mat Teknik (Reduced weight slightly)
+  TI0043: { AI: 0.6 } # Logika Mat
+  TI0093: { AI: 0.8 } # Mat Diskrit
+  TI0113: { AI: 0.9 } # Statistik
+  TI0263: { AI: 1.0 } # Kecerdasan Buatan (Core)
+  TI0193: { AI: 0.7 } # Riset Operasi
+
+  # DMS Foundation
+  TI0173: { DMS: 1.0 } # SBD
+  TI0181: { DMS: 1.0 } # Prak SBD
+  TI0133: { DMS: 0.9, AI: 0.8 } # StrukDat (ADDED AI)
+  TI0141: { DMS: 0.9, PSD: 0.8, AI: 0.7 } # Prak StrukDat (ADDED AI)
+
+  # PSD Foundation
+  TI0073: { PSD: 1.0, AI: 0.8 } # Algo (ADDED AI)
+  TI0082: { PSD: 1.0, AI: 0.8 } # Prak Algo (ADDED AI)
+  TI0243: { PSD: 0.9 } # Web
+  TI0251: { PSD: 1.0 } # Prak Web
+  TI0373: { PSD: 1.0 } # RPL-BO
+  TI0382: { PSD: 1.0 } # Prak RPL-BO
+  TI0203: { PSD: 0.8 } # IMK
+  TI0223: { PSD: 0.9 } # PBO
+  TI0231: { PSD: 1.0 } # Prak PBO
+
+  # INFRA Foundation (Network, OS, Hardware)
+  TI0052: { INFRA: 1.0 } # Jaringan Komputer
+  TI0061: { INFRA: 1.0 } # Praktikum Jarkom
+  TI0153: { INFRA: 1.0 } # Infrastruktur LAN
+  TI0161: { INFRA: 1.0 } # Praktikum Infra LAN
+  TI0213: { INFRA: 0.9 } # Sistem Operasi
+  TI0273: { INFRA: 0.9 } # Keamanan Komputer
+  TI0012: { INFRA: 0.7 } # Teknologi Komputer
+  TI0021: { INFRA: 0.8 } # Praktikum Tekom
+  TI0103: { INFRA: 0.8 } # Arsitektur & Org Komputer
+
+# ==========================================
+# COMPETENCY (Sem 5+)
+# ==========================================
+COMPETENCY:
+  # --- AI Official List ---
+  TI6033: { AI: 1.0, INFRA: 0.7 } # Internet of Things
+  TI6043: { AI: 1.0 } # Machine Learning
+  TI6053: { AI: 1.0 } # Jaringan Syaraf Tiruan
+  TI6063: { AI: 1.0 } # Knowledge-Based System
+  TI6073: { AI: 1.0 } # NLP (Bahasa Natural)
+  TI6083: { AI: 1.0 } # Citra Digital
+  TI6093: { AI: 1.0 } # Sinyal Digital
+  TI6103: { AI: 0.8, PSD: 0.9 } # Game Engine
+
+  # --- DMS Official List ---
+  TI3013: { DMS: 1.0 } # Administrasi Basis Data
+  TI3033: { DMS: 1.0 } # Data Warehouse
+  TI3043: { DMS: 1.0 } # Basis Data Terdistribusi
+  TI3053: { DMS: 1.0, INFRA: 0.6 } # Keamanan Basis Data
+  TI3063: { DMS: 1.0 } # Admin BD Non-Relasional
+
+  # --- PSD Official List ---
+  TI5013: { PSD: 1.0 } # Pola Desain Antarmuka
+  TI5023: { PSD: 0.8 } # Desain Eksperimental
+  TI5033: { PSD: 0.9 } # Desain & Evaluasi Antarmuka
+  TI4023: { PSD: 0.8 } # Pemodelan Proses Bisnis
+  TI4033: { PSD: 1.0 } # Test Engineering
+  TI6143: { PSD: 1.0 } # Pemrograman Desktop
+
+  # --- SHARED "DEV STACK" (AI, DMS, PSD) ---
+  TI6113: { PSD: 1.0, AI: 0.7, DMS: 0.7 } # Mobile Android
+  TI6123: { PSD: 1.0, AI: 0.7, DMS: 0.7 } # Mobile iOS
+  TI6133: { PSD: 1.0, AI: 0.7, DMS: 0.7 } # Mobile Hybrid
+  TI6153: { PSD: 1.0, DMS: 0.9, AI: 0.6 } # Web Lanjut
+
+  # --- INFRA Official List ---
+  TI8023: { INFRA: 1.0 } # Enterprise Network
+  TI8033: { INFRA: 1.0 } # Cloud Infrastructure
+  TI8043: { INFRA: 1.0 } # Pengantar Keamanan Jaringan
+  TI8053: { INFRA: 1.0 } # Jaringan Nir Kabel
+  TI8063: { INFRA: 1.0 } # Otomasi Jaringan
+  TI8073: { INFRA: 1.0 } # Teknologi WAN
+  TI8083: { INFRA: 1.0 } # Keamanan Jaringan
+
+  # --- ELECTIVES (Mata Kuliah Bebas) ---
+  # AI Related
+  TI9393: { AI: 1.0 } # Deep Learning
+  TI9563: { AI: 1.0 } # AI for Trading
+  TI9553: { AI: 1.0 } # Pengenalan App Berbasis AI
+  TI9273: { AI: 1.0 } # Sistem Pakar
+  TI9173: { AI: 0.9 } # Logika Samar (Fuzzy)
+  TI6013: { AI: 1.0 } # Supervised Learning
+  TI6023: { AI: 1.0 } # Unsupervised Learning
+  TI9443: { AI: 0.8, INFRA: 0.5 } # Forensic Text
+  TI9013: { AI: 0.7, PSD: 0.6 } # Algoritma Graf
+
+  # Data Related
+  TI9023: { DMS: 0.9, AI: 0.7 } # Analisis Data Statistik
+  TI9043: { DMS: 1.0, AI: 0.7 } # Big Data
+  TI9333: { DMS: 0.9, AI: 0.6 } # Visualisasi Data
+
+  # PSD Related
+  TI9053: { PSD: 1.0 } # Competitive Programming
+  TI9063: { PSD: 0.9, AI: 0.4 } # Desain Game
+  TI9093: { PSD: 1.0 } # Game Engine (Elective code)
+  TI9103: { PSD: 0.9 } # Grafika Game
+  TI9083: { PSD: 0.8 } # Game Audio
+  TI9293: { PSD: 0.8 } # Teknik Animasi
+  TI9573: { PSD: 0.8, INFRA: 0.6 } # Blockchain
+  TI9253: { PSD: 0.8, AI: 0.7 } # Semantic Web
+  TI9493: { PSD: 0.8, AI: 0.5 } # Augmented Reality
+  TI9423: { PSD: 0.8 } # Manajemen Konten Web
+  TI9433: { PSD: 0.9 } # SOA / Layanan
+
+  # Infra Related
+  TI9583: { INFRA: 1.0 } # Container Orchestration
+  TI9163: { INFRA: 0.8, AI: 0.4 } # Kriptografi
+  TI9143: { INFRA: 0.6, DMS: 0.6 } # Kompresi Data

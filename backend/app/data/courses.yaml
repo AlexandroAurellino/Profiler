@@ -1,0 +1,355 @@
+# ==========================================
+# MATA KULIAH WAJIB (MANDATORY)
+# ==========================================
+- code: MH1013
+  name: Pendidikan Agama Kristen
+  sks: 3
+- code: MH1033
+  name: Bahasa Indonesia
+  sks: 3
+- code: MH1073
+  name: Pendidikan Pancasila
+  sks: 3
+- code: MH1083
+  name: Pendidikan Kewarganegaraan
+  sks: 3
+- code: TI0012
+  name: Teknologi Komputer
+  sks: 2
+- code: TI0021
+  name: Praktikum Teknologi Komputer
+  sks: 1
+- code: TI0033
+  name: Matematika Teknik
+  sks: 3
+- code: TI0043
+  name: Logika Matematika
+  sks: 3
+- code: TI0052
+  name: Jaringan Komputer
+  sks: 2
+- code: TI0061
+  name: Praktikum Jaringan Komputer
+  sks: 1
+- code: TI0073
+  name: Algoritma dan Pemrograman
+  sks: 3
+- code: TI0082
+  name: Praktikum Algoritma dan Pemrograman
+  sks: 2
+- code: TI0093
+  name: Matematika Diskrit
+  sks: 3
+- code: TI0103
+  name: Arsitektur dan Organisasi Komputer
+  sks: 3
+- code: TI0113
+  name: Statistik
+  sks: 3
+- code: TI0133
+  name: Struktur Data
+  sks: 3
+- code: TI0141
+  name: Praktikum Struktur Data
+  sks: 1
+- code: TI0153
+  name: Infrastruktur LAN
+  sks: 3
+- code: TI0161
+  name: Praktikum Infrastruktur LAN
+  sks: 1
+- code: TI0173
+  name: Sistem Basis Data
+  sks: 3
+- code: TI0181
+  name: Praktikum Sistem Basis Data
+  sks: 1
+- code: TI0193
+  name: Riset Operasi
+  sks: 3
+- code: TI0203
+  name: Interaksi Manusia dan Komputer
+  sks: 3
+- code: TI0213
+  name: Sistem Operasi
+  sks: 3
+- code: TI0243
+  name: Pemrograman Web
+  sks: 3
+- code: TI0251
+  name: Praktikum Pemrograman Web
+  sks: 1
+- code: TI0263
+  name: Kecerdasan Buatan
+  sks: 3
+- code: TI0273
+  name: Keamanan Komputer
+  sks: 3
+- code: TI0302
+  name: Etika Profesi Teknologi Informasi
+  sks: 2
+- code: TI0313
+  name: Manajemen Proyek Teknologi Informasi
+  sks: 3
+- code: TI0323
+  name: Riset Teknologi Informasi
+  sks: 3
+- code: TI0333
+  name: Kuliah Kerja Nyata
+  sks: 3
+- code: TI0353
+  name: Kerja Praktik
+  sks: 3
+- code: TI0366
+  name: Skripsi
+  sks: 6
+- code: TI0373
+  name: RPL Berorientasi Obyek
+  sks: 3
+- code: TI0382
+  name: Praktikum RPL Berorientasi Obyek
+  sks: 2
+
+# ==========================================
+# PILIHAN WAJIB PROFESI & BEBAS
+# ==========================================
+# --- PSD Group ---
+- code: TI5013
+  name: Pola Desain Antarmuka Pengguna
+  sks: 3
+- code: TI5023
+  name: Desain Eksperimental
+  sks: 3
+- code: TI5033
+  name: Desain dan Evaluasi Antarmuka
+  sks: 3
+- code: TI4023
+  name: Pemodelan Proses Bisnis
+  sks: 3
+- code: TI4033
+  name: Test Engineering
+  sks: 3
+- code: TI6113
+  name: Pemrograman Perangkat Bergerak Android
+  sks: 3
+- code: TI6123
+  name: Pemrograman Perangkat Bergerak iOS
+  sks: 3
+- code: TI6133
+  name: Pemrograman Perangkat Bergerak Hybrid
+  sks: 3
+- code: TI6143
+  name: Pemrograman Desktop
+  sks: 3
+- code: TI6153
+  name: Pemrograman Web Lanjut
+  sks: 3
+
+# --- DMS Group ---
+- code: TI3013
+  name: Administrasi Basis Data
+  sks: 3
+- code: TI3033
+  name: Data Warehouse
+  sks: 3
+- code: TI3043
+  name: Basis Data Terdistribusi
+  sks: 3
+- code: TI3053
+  name: Keamanan Basis Data
+  sks: 3
+- code: TI3063
+  name: Administrasi Basis Data Non Relasional
+  sks: 3
+
+# --- AI Group ---
+- code: TI6033
+  name: Internet of Things
+  sks: 3
+- code: TI6043
+  name: Machine Learning
+  sks: 3
+- code: TI6053
+  name: Jaringan Syaraf Tiruan
+  sks: 3
+- code: TI6063
+  name: Knowledge-Based System
+  sks: 3
+- code: TI6073
+  name: Pemrosesan Bahasa Natural
+  sks: 3
+- code: TI6083
+  name: Pemrosesan Citra Digital
+  sks: 3
+- code: TI6093
+  name: Pemrosesan Sinyal Digital
+  sks: 3
+- code: TI6103
+  name: Game Engine
+  sks: 3
+
+# --- INFRA Group ---
+- code: TI8023
+  name: Enterprise Network
+  sks: 3
+- code: TI8033
+  name: Cloud Infrastructure
+  sks: 3
+- code: TI8043
+  name: Pengantar Keamanan Jaringan
+  sks: 3
+- code: TI8053
+  name: Jaringan Nir Kabel
+  sks: 3
+- code: TI8063
+  name: Otomasi Jaringan
+  sks: 3
+- code: TI8073
+  name: Teknologi WAN
+  sks: 3
+- code: TI8083
+  name: Keamanan Jaringan
+  sks: 3
+
+# --- Pilihan Bebas (Electives) ---
+- code: TI9013
+  name: Algoritma Graf
+  sks: 3
+- code: TI9023
+  name: Analisis Data Statistik
+  sks: 3
+- code: TI9383
+  name: Analisis Proses Bisnis
+  sks: 3
+- code: TI9463
+  name: Bahasa Inggris Informatika
+  sks: 3
+- code: TI9043
+  name: Big Data
+  sks: 3
+- code: TI9053
+  name: Competitive Programming
+  sks: 3
+- code: TI9393
+  name: Deep Learning
+  sks: 3
+- code: TI9063
+  name: Desain Game
+  sks: 3
+- code: TI9073
+  name: Digital Humanities
+  sks: 3
+- code: TI9403
+  name: E-Commerce
+  sks: 3
+- code: TI9413
+  name: E-Government
+  sks: 3
+- code: TI9083
+  name: Game Audio
+  sks: 3
+- code: TI9103
+  name: Grafika Game
+  sks: 3
+- code: TI9143
+  name: Kompresi Data
+  sks: 3
+- code: TI9153
+  name: Komunikasi Bisnis
+  sks: 3
+- code: TI9163
+  name: Kriptografi
+  sks: 3
+- code: TI9173
+  name: Logika Samar
+  sks: 3
+- code: TI9373
+  name: Manajemen Kepemimpinan (3 SKS)
+  sks: 3
+- code: TI9372
+  name: Manajemen Kepemimpinan (2 SKS)
+  sks: 2
+- code: TI9423
+  name: Manajemen Konten Web
+  sks: 3
+- code: TI9183
+  name: Metode Numerik
+  sks: 3
+- code: TI9433
+  name: Pemrograman Berorientasi Layanan
+  sks: 3
+- code: TI9233
+  name: Praktikum Keahlian Khusus (SAP)
+  sks: 3
+- code: TI9473
+  name: Program Kreativitas Mahasiswa
+  sks: 3
+- code: TI9486
+  name: Proyek Informatika Merdeka
+  sks: 6
+- code: TI9253
+  name: Semantic Web
+  sks: 3
+- code: TI9263
+  name: Sistem Informasi Geografis
+  sks: 3
+- code: TI9273
+  name: Sistem Pakar
+  sks: 3
+- code: TI9283
+  name: Technopreneurship dan Manajemen Inovasi
+  sks: 3
+- code: TI9293
+  name: Teknik Animasi
+  sks: 3
+- code: TI9323
+  name: Text Reuse and Plagiarism Detection
+  sks: 3
+- code: TI9443
+  name: Forensic Text
+  sks: 3
+- code: TI9453
+  name: UX Writing and Storytelling
+  sks: 3
+- code: TI9333
+  name: Visualisasi Data
+  sks: 3
+- code: TI9493
+  name: Augmented Reality
+  sks: 3
+- code: TI9475
+  name: Pengembangan Pribadi
+  sks: 5
+- code: TI9489
+  name: Program Studi Mandiri 1
+  sks: 9
+- code: TI9563
+  name: AI for Trading
+  sks: 3
+- code: TI9573
+  name: Pemrograman Blockchain Dasar
+  sks: 3
+- code: TI9583
+  name: Container Orchestration
+  sks: 3
+- code: TI9343
+  name: Pemrograman Web Lanjut (Elective)
+  sks: 3
+- code: TI7013
+  name: Internet of Things (Old Code)
+  sks: 3
+- code: TI7023
+  name: iOS (Old Code)
+  sks: 3
+- code: TI7033
+  name: Android (Old Code)
+  sks: 3
+- code: TI8013
+  name: Administrasi Sistem
+  sks: 3
+- code: TI6013
+  name: Supervised Learning
+  sks: 3
+- code: TI6023
+  name: Unsupervised Learning
+  sks: 3
