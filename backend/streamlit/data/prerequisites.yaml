@@ -1,0 +1,86 @@
+# backend/data/prerequisites.yaml
+
+# ==========================================
+# PREREQUISITES MAP
+# ==========================================
+
+# Format for Grade:
+#   Target: { RequiredCourse: MinGrade }
+#   Note: MinGrade 1.0 = D, 2.0 = C, 0.0 = E (Taking or Passed)
+
+# Format for SKS:
+#   Target: { SKS: Amount }
+
+# --- Basic Labs ---
+TI0022: { TI0012: 0.0 } # Prak TeKom -> TeKom (Taking/>E)
+TI0082: { TI0073: 0.0 } # Prak Algo -> Algo (Taking/>E)
+TI0061: { TI0052: 0.0 } # Prak JarKom -> JarKom (Taking/>E)
+TI0142: { TI0133: 0.0 } # Prak StrukDat -> StrukDat (Taking/>E)
+TI0161: { TI0153: 0.0 } # Prak RS -> RS (Taking/>E)
+TI0181: { TI0173: 0.0 } # Prak SBD -> SBD (Taking/>E)
+TI0231: { TI0223: 0.0 } # Prak PBO -> PBO (Taking/>E)
+TI0251: { TI0243: 0.0 } # Prak Web -> Web (Taking/>E)
+
+# --- Foundation Theory ---
+TI0133: { TI0073: 1.0 } # StrukDat -> Algo > D
+TI0243:
+  - { TI0073: 1.0 } # Web -> Algo > D
+  - { TI0173: 1.0 } # Web -> SBD > D
+TI0153: { TI0052: 1.0 } # RS -> JarKom > D
+TI0223: { TI0133: 1.0 } # PBO -> StrukDat > D
+TI0283:
+  - { TI0203: 1.0 } # DEA -> IMK > D
+  - { TI0113: 1.0 } # DEA -> Statistik > D
+
+# --- SKS Barriers ---
+TI0173: { SKS: 34 } # SBD
+TI0193: { SKS: 34 } # Riset Operasi
+TI0213: { SKS: 34 } # OS
+MH1073: { SKS: 40 } # Pancasila
+TI0263: { SKS: 43 } # AI
+TI0273: { SKS: 58 } # Keamanan Komp
+TI0295: { SKS: 64 } # RPL
+TI0303: { SKS: 64 } # Etika
+TI0313: { SKS: 75 } # Manajemen Proyek
+TI0323: { SKS: 75 } # Riset TI
+TI0333: { SKS: 90 } # KKN
+TI0341: { SKS: 100 } # Seminar
+TI0353: { SKS: 100 } # KP
+
+# --- Advanced Profile Classes ---
+# AI / Data
+TI3013: { TI0173: 2.0 } # Admin BD -> SBD > C
+TI3033: { TI0173: 2.0 } # Data Warehouse -> SBD > C
+TI6013: { TI0263: 2.0 } # Supervised -> AI > C
+TI6023: { TI0263: 2.0 } # Unsupervised -> AI > C
+TI9123: { SKS: 75 } # JST
+TI9273: { TI0263: 1.0 } # SisPak -> AI > D
+TI9023: { TI0113: 1.0 } # Andasta -> Stat > D
+TI9043: { TI0173: 2.0 } # Big Data -> SBD > C
+TI9323: { TI0263: 1.0 } # Text Reuse -> AI > D
+
+# PSD
+TI5013: { TI0203: 2.0 } # Pola Desain -> IMK > C
+TI5023: { TI5033: 1.0 } # Exp Design -> DEA > D (Note: Assuming TI5033 is DEA)
+TI7023: { TI0223: 2.0 } # iOS -> PBO > C
+TI7033: { TI0223: 2.0 } # Android -> PBO > C
+TI9013: { TI0073: 1.0 } # Algraf -> Algo > D
+TI9053: { TI0133: 2.0 } # CP -> StrukDat > C
+TI9193: { TI0133: 1.0 } # GUI -> StrukDat > D
+TI9293: { TI0073: 1.0 } # Animasi -> Algo > D
+TI9343: { TI0243: 2.0 } # Web Lanjut -> Web > C
+TI9363: { TI0223: 1.0 } # Komponen -> PBO > D
+
+# INFRA
+TI7013:
+  - { TI0243: 2.0 } # IoT -> Web > C
+  - { TI0103: 2.0 } # IoT -> ArOrKom > C
+TI8013:
+  - { SKS: 60 }
+  - { TI0052: 2.0 } # Admin Sys -> JarKom > C
+  - { TI0213: 2.0 } # Admin Sys -> OS > C
+TI8023: { TI0153: 2.0 } # Enterprise -> RS > C
+TI9113: { TI0153: 1.0 } # Nir Kabel -> RS > D
+TI9133: { TI8073: 1.0 } # Keamanan Jar -> TekWAN (TI8073) > D
+TI9163: { TI0273: 2.0 } # Kripto -> KaKom > C
+TI9303: { TI8023: 2.0 } # WAN -> Enterprise > C

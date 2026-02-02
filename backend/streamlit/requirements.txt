@@ -1,0 +1,6 @@
+streamlit>=1.20.0
+pandas
+pdfplumber
+pyyaml
+pydantic>=2.0.0
+pydantic-settings
